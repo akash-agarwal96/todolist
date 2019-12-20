@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+    text-transform: capitalize;
+    background: radial-gradient(gray, lightyellow);
+}
+
+.wrapper{
+
+width: 50%;
+margin: 20px auto;
+border: solid 5px black;
+border-radius: 17px;
+background:linear-gradient(lightyellow, lightpink);    
+}
+
+.wrapper .header{
+    width: 100%;
+    text-align: center;
+    height: 55px;
+background: linear-gradient(lightgray, aliceblue);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom: 4px dashed black;
+}
+
+.wrapper .header h1{
+   text-align: center;
+   font-family: 'Timmana', monospace;
+    position: relative;
+    top: 5px;
+    font-size: 36px;
+}
+
+.tasks{
+    font-family: 'Inconsolata', monospace;
+    padding: 15px;
+}
+
+.tasks h2{
+    text-align: center;
+    font-size: 26px;
+    padding: 10px;
+    width: 100%;
+    
+}
+
+input[type="checkbox"]{
+    position: relative;
+    top: 27px;
+    right: 20px;
+    width: 17px;
+    height: 17px;
+    float: right;
+    
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+    color: rgba(0,0,0,.3)
+}
+
+.evening-tasks h2{
+    position: relative;
+    top: 10px;
+}
+
+.tasks span{
+    font-weight: bold;
+    font-size: 19px;
+    padding: 5px;
+    max-width: 75%;
+    clear: right;
+   display: block;
+}
+
+.fa-clipboard-list {
+    color: #985c38;
+}
+
+.fa-pray {
+    color: #88521b;
+}
+
+.fa-laptop-code {
+    color: #898a8b;
+}
+
+.fa-running {
+    color: #765c42;
+}
+
+.fa-user-tie {
+    color: #83191c;
+}
+
+.fa-chalkboard {
+    color: #416254;
+}
+
+.fa-quora {
+    color: #b92b27;
+}
+
+.fa-instagram {
+    color: #d10069;
+}
+
+.fa-guitar {
+    color: #cc6e0c;
+}
+
+.fa-twitter {
+    color: #1da1f2;
+}
+
+@media(max-width: 1199px) and (min-width: 992px) {
+    .wrapper {
+        width: 65%;
+        margin: 18px auto;
+    }
+}
+
+@media(max-width: 991px) and (min-width: 768px) {
+    .wrapper {
+        width: 79%;
+        margin: 19px auto;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .wrapper {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .tasks span {
+        max-width: 88%;
+    }
+}
+
+@media(max-width: 575px) {
+    .wrapper {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .wrapper .heading h1 {
+        font-size: 30px;
+        position: relative;
+        top: 8px;
+    }
+
+    .tasks h2 {
+        font-size: 20px;
+    }
+
+    .tasks span {
+        font-size: 18px;
+        max-width: 97%;
+    }
+
+    input[type="checkbox"] {
+        position: relative;
+        top: 24px;
+        right: -5px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .tasks i {
+        display: none
+    }
+
+
